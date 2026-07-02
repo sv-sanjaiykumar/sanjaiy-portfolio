@@ -1,0 +1,121 @@
+@import "tailwindcss";
+
+@theme {
+  --color-ink: #06070c;
+  --color-panel: #0b0d16;
+  --color-line: rgba(255, 255, 255, 0.08);
+  --color-mist: #e9ecf5;
+  --color-dim: #9096ab;
+  --color-flutter: #45c1ff;
+  --color-violet: #8b5cf6;
+  --font-display: "Clash Display", "Inter", system-ui, sans-serif;
+  --font-body: "Inter", system-ui, sans-serif;
+}
+
+html {
+  scroll-behavior: auto; /* Lenis handles smoothing; CSS smooth-scroll would fight it */
+}
+
+body {
+  @apply bg-ink text-mist font-body antialiased;
+  overflow-x: clip;
+}
+
+::selection {
+  background: rgba(139, 92, 246, 0.45);
+  color: #fff;
+}
+
+/* Custom cursor takes over on precise pointers only */
+@media (pointer: fine) {
+  .app-cursor,
+  .app-cursor a,
+  .app-cursor button,
+  .app-cursor input,
+  .app-cursor textarea,
+  .app-cursor [role="button"] {
+    cursor: none;
+  }
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
+
+.text-gradient {
+  background: linear-gradient(92deg, #45c1ff 0%, #7aa8ff 45%, #8b5cf6 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.glass {
+  background: rgba(255, 255, 255, 0.035);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+}
+
+.glass-strong {
+  background: rgba(11, 13, 22, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.09);
+  backdrop-filter: blur(18px) saturate(140%);
+  -webkit-backdrop-filter: blur(18px) saturate(140%);
+}
+
+/* Grain / noise overlay */
+.grain::after {
+  content: "";
+  position: fixed;
+  inset: -100%;
+  z-index: 80;
+  pointer-events: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='240'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  opacity: 0.045;
+  animation: grain-shift 0.9s steps(4) infinite;
+}
+
+@keyframes grain-shift {
+  0% { transform: translate(0, 0); }
+  25% { transform: translate(-2%, 3%); }
+  50% { transform: translate(3%, -2%); }
+  75% { transform: translate(-3%, -3%); }
+  100% { transform: translate(0, 0); }
+}
+
+/* Oversized display headings with tight kerning */
+.display-tight {
+  letter-spacing: -0.035em;
+  line-height: 0.95;
+}
+
+/* Masked line reveals for SplitText */
+.split-mask .line,
+.split-mask .word,
+.split-mask .char {
+  will-change: transform;
+}
+
+/* Hide scrollbar on the mobile project rail but keep it scrollable */
+.no-scrollbar {
+  scrollbar-width: none;
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Marquee for the skills strip */
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+.animate-marquee {
+  animation: marquee 28s linear infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .grain::after,
+  .animate-marquee {
+    animation: none;
+  }
+}
