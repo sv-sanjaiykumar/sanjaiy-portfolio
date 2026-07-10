@@ -25,7 +25,7 @@ export default function About() {
           <div className="mt-8 grid grid-cols-2 gap-6 border-t border-line pt-6">
             <div>
               <p className="font-display text-3xl font-semibold text-gradient">{about.cgpa}</p>
-              <p className="mt-1 text-xs text-dim">CGPA (to 5th sem)</p>
+              <p className="mt-1 text-xs text-dim">CGPA (to 6th sem)</p>
             </div>
             <div>
               <p className="font-display text-3xl font-semibold">{about.years}</p>

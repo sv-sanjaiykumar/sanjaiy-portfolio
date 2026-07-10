@@ -18,7 +18,7 @@ export const about = {
   degree: "B.E. Computer Science & Engineering",
   college: "Sri Eshwar College of Engineering",
   years: "2023 — 2027",
-  cgpa: "7.49",
+  cgpa: "7.53",
   narrative:
     "I build mobile apps that feel alive — real-time, offline-ready, and fast. My happy place is the intersection of Flutter's expressive UI toolkit and Firebase's real-time backbone, where an idea becomes a working product on a phone screen. From habit trackers to campus navigation, I care about scalable architecture, clean state management, and the tiny interaction details that make an app feel premium.",
 };
