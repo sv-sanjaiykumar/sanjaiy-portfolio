@@ -1,16 +1,16 @@
 export const profile = {
   name: "Sanjaiykumar S V",
-  roles: ["Flutter Developer", "Mobile App Builder", "Firebase Enthusiast"],
+  roles: ["Mobile App Developer"],
   email: "sanjaiy2006@gmail.com",
   phone: "+91 93425 84218",
-  location: "Coimbatore, India",
+  location: "India",
   links: {
     github: "https://github.com/sv-sanjaiykumar",
     linkedin: "https://www.linkedin.com/in/sanjaiykumar-s-v/",
     leetcode: "https://leetcode.com/u/Sanjaiykumarsv/",
     hackerrank: "https://www.hackerrank.com/profile/sanjaiykumar_sv1",
     gfg: "https://www.geeksforgeeks.org/profile/sanjaiykumaf50q",
-    resume: "/23CS140_SANJAIYKUMAR_S_V.pdf",
+      resume: "/sanjaiykumar_s_v_Resume.pdf",
   },
 };
 
@@ -20,19 +20,19 @@ export const about = {
   years: "2023 — 2027",
   cgpa: "7.53",
   narrative:
-    "I build mobile apps that feel alive — real-time, offline-ready, and fast. My happy place is the intersection of Flutter's expressive UI toolkit and Firebase's real-time backbone, where an idea becomes a working product on a phone screen. From habit trackers to campus navigation, I care about scalable architecture, clean state management, and the tiny interaction details that make an app feel premium.",
+    "I build scalable mobile applications using Flutter and React Native, with a focus on responsive UI, clean architecture, and reliable backend integration. I work with Firebase, Supabase, and REST APIs to build real-time and user-focused applications. From healthcare and finance platforms to placement management and subscription tracking, I enjoy turning ideas into practical mobile products with clean state management and intuitive user experiences.",
 };
 
 export const skillGroups = [
   {
     label: "Languages",
-    level: 90,
-    items: ["C++", "Dart"],
+    level: 88,
+    items: ["C++", "Dart", "TypeScript", "JavaScript"],
   },
   {
-    label: "Framework",
+    label: "Mobile Development",
     level: 92,
-    items: ["Flutter", "Flutter Widgets & Layouts"],
+    items: ["Flutter", "React Native", "Expo", "Flutter Widgets & Layouts"],
   },
   {
     label: "State Management",
@@ -40,14 +40,30 @@ export const skillGroups = [
     items: ["Provider", "GetX"],
   },
   {
-    label: "Backend & Database",
+    label: "Backend & API",
     level: 88,
-    items: ["Firebase Auth", "Cloud Firestore", "Firebase Storage"],
+    items: [
+      "Firebase Authentication",
+      "Cloud Firestore",
+      "Firebase Storage",
+      "REST API"
+    ],
+  },
+  {
+    label: "Database",
+    level: 85,
+    items: ["Firebase", "Supabase"],
   },
   {
     label: "Tools",
     level: 86,
-    items: ["VS Code", "Android Studio", "GitHub", "Canva", "Google Colab"],
+    items: [
+      "VS Code",
+      "Android Studio",
+      "GitHub",
+      "Canva",
+      "Google Colab"
+    ],
   },
 ];
 
@@ -63,42 +79,42 @@ export const experience = [
 
 export const projects = [
   {
-    title: "Habit-app",
+    title: "SecureCare",
     year: "2025",
     blurb:
-      "Habit-tracking app with automated monitoring, visual insights, structured data export, and real-time sync — built on a clean modular architecture.",
-    tech: ["Flutter", "Firebase", "Provider"],
-    github: "https://github.com/sv-sanjaiykumar/flutter-intern-habit-app",
-    app: "https://github.com/sv-sanjaiykumar/flutter-app-apk/tree/main/Habitapp",
+      "Security-first healthcare platform with encrypted medical records, role-based access control, shift-based access, dynamic watermarking, and audit logging.",
+    tech: ["React.js", "Firebase", "Node.js"],
+    github: "https://github.com/sv-sanjaiykumar/secure_care",
+    app: null,
     accent: "#45c1ff",
   },
   {
-    title: "UniNav",
+    title: "Family Wallet",
     year: "2025",
     blurb:
-      "Smart campus navigation with real-time location tracking, interactive maps, optimized routing, and landmark-based guidance.",
-    tech: ["Flutter", "Firebase", "Provider"],
-    github: "https://github.com/sv-sanjaiykumar/UniNav",
-    app: "https://github.com/sv-sanjaiykumar/flutter-app-apk/tree/main/UniNav",
+      "Family finance application for secure parent-child account management, expense tracking, allowance control, and real-time notifications.",
+    tech: ["Flutter", "Firebase"],
+    github: "https://github.com/sv-sanjaiykumar/family_wallet",
+    app: null,
     accent: "#7aa8ff",
   },
   {
     title: "Placement Portal",
     year: "2026",
     blurb:
-      "Role-based recruitment platform with job posting, application tracking, and real-time notifications to streamline campus hiring.",
+      "Campus recruitment platform with role-based authentication, job posting, application tracking, and real-time notifications to streamline placement management.",
     tech: ["Flutter", "Firebase", "Role-based Auth"],
     github: "https://github.com/sv-sanjaiykumar/placement_portal",
     app: null,
     accent: "#8b5cf6",
   },
   {
-    title: "Family Wallet",
+    title: "Recurrly",
     year: "2026",
     blurb:
-      "Parent-child expense management with secure account linking, allowance control, and real-time notifications for financial awareness.",
-    tech: ["Flutter", "Firebase", "Notifications"],
-    github: "https://github.com/sv-sanjaiykumar/family_wallet",
+      "Subscription tracking application for monitoring recurring payments and upcoming renewals with a centralized dashboard for billing details and subscription statuses.",
+    tech: ["React Native", "Expo", "Supabase", "Node.js"],
+    github: "https://github.com/sv-sanjaiykumar/recurrly-react-native",
     app: null,
     accent: "#a78bfa",
   },
@@ -107,7 +123,7 @@ export const projects = [
 export const achievements = [
   {
     platform: "LeetCode",
-    value: 140,
+    value: 180,
     suffix: "+",
     label: "problems solved",
     detail: "6+ contests attended",
