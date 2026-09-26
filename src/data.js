@@ -10,7 +10,7 @@ export const profile = {
     leetcode: "https://leetcode.com/u/Sanjaiykumarsv/",
     hackerrank: "https://www.hackerrank.com/profile/sanjaiykumar_sv1",
     gfg: "https://www.geeksforgeeks.org/profile/sanjaiykumaf50q",
-      resume: "/sanjaiykumar_s_v_Resume.pdf",
+      resume: "/sanjaiykumar_s_v_resume.pdf",
   },
 };
 
