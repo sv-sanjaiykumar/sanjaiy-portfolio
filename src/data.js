@@ -1,6 +1,6 @@
 export const profile = {
   name: "Sanjaiykumar S V",
-  roles: ["Mobile App Developer"],
+  roles: ["Software Developer"],
   email: "sanjaiy2006@gmail.com",
   phone: "+91 93425 84218",
   location: "India",
@@ -20,50 +20,50 @@ export const about = {
   years: "2023 — 2027",
   cgpa: "7.53",
   narrative:
-    "I build scalable mobile applications using Flutter and React Native, with a focus on responsive UI, clean architecture, and reliable backend integration. I work with Firebase, Supabase, and REST APIs to build real-time and user-focused applications. From healthcare and finance platforms to placement management and subscription tracking, I enjoy turning ideas into practical mobile products with clean state management and intuitive user experiences.",
+    "I build mobile and full-stack applications using React Native, and modern web technologies, with a focus on responsive UI, clean architecture, and reliable backend integration. I work with Firebase, REST APIs, and FastAPI to create practical products across healthcare, campus recruitment, event booking, and subscription tracking.",
 };
 
 export const skillGroups = [
   {
     label: "Languages",
     level: 88,
-    items: ["C++", "Dart", "TypeScript", "JavaScript"],
+    items: ["C++", "TypeScript", "JavaScript", "Python"],
   },
   {
-    label: "Mobile Development",
+    label: "Frameworks",
+    level: 86,
+    items: ["Node.js", "React Native", "Expo", "Flutter"],
+  },
+  {
+    label: "Mobile App Development",
     level: 92,
-    items: ["Flutter", "React Native", "Expo", "Flutter Widgets & Layouts"],
+    items: ["React Native", "Flutter", "REST API Integration"],
   },
   {
-    label: "State Management",
-    level: 85,
-    items: ["Provider", "GetX"],
+    label: "Version Control & Collaboration",
+    level: 86,
+    items: ["Git", "GitHub", "Branching", "Pull Requests"],
   },
   {
-    label: "Backend & API",
+    label: "Backend & APIs",
     level: 88,
     items: [
       "Firebase Authentication",
-      "Cloud Firestore",
+      "Firestore",
       "Firebase Storage",
-      "REST API"
+      "REST APIs",
+      "FastAPI",
     ],
   },
   {
     label: "Database",
     level: 85,
-    items: ["Firebase", "Supabase"],
+    items: ["Firebase", "SQLite"],
   },
   {
-    label: "Tools",
+    label: "Developer Tools",
     level: 86,
-    items: [
-      "VS Code",
-      "Android Studio",
-      "GitHub",
-      "Canva",
-      "Google Colab"
-    ],
+    items: ["VS Code", "Antigravity"],
   },
 ];
 
@@ -72,7 +72,7 @@ export const experience = [
     role: "Flutter with Dart Intern",
     year: "2025",
     summary:
-      "Intensive internship focused on building scalable mobile applications with Provider and Firebase Firestore. Shipped a fully functional habit app with automated tracking, progress visualization, offline sync, push notifications, and a clean modular architecture.",
+      "Completed an intensive Flutter and Dart internship focused on building scalable mobile applications using Provider and Firebase Firestore. Developed a fully functional habit tracking application featuring automated tracking, progress visualization, offline sync, and push notifications. Engineered a Placement Portal using Flutter and Firebase featuring role-based authentication, job posting, and real-time application tracking. Strengthened expertise in responsive UI development, backend integration, and clean modular application architecture.",
     tags: ["Flutter", "Dart", "Provider", "Firestore", "Push Notifications"],
   },
 ];
@@ -89,18 +89,8 @@ export const projects = [
     accent: "#45c1ff",
   },
   {
-    title: "Family Wallet",
-    year: "2025",
-    blurb:
-      "Family finance application for secure parent-child account management, expense tracking, allowance control, and real-time notifications.",
-    tech: ["Flutter", "Firebase"],
-    github: "https://github.com/sv-sanjaiykumar/family_wallet",
-    app: null,
-    accent: "#7aa8ff",
-  },
-  {
     title: "Placement Portal",
-    year: "2026",
+    year: "2025",
     blurb:
       "Campus recruitment platform with role-based authentication, job posting, application tracking, and real-time notifications to streamline placement management.",
     tech: ["Flutter", "Firebase", "Role-based Auth"],
@@ -109,11 +99,21 @@ export const projects = [
     accent: "#8b5cf6",
   },
   {
+    title: "Gather",
+    year: "2026",
+    blurb:
+      "Full-stack event booking platform with a FastAPI backend, React frontend, SQLite database, and generated Python SDK for multi-seat bookings and creator management.",
+    tech: ["Python 3", "FastAPI", "React.js", "OpenAPI", "SQLite"],
+    github: "https://github.com/sv-sanjaiykumar/event_booking_system.git",
+    app: null,
+    accent: "#7aa8ff",
+  },
+  {
     title: "Recurrly",
     year: "2026",
     blurb:
       "Subscription tracking application for monitoring recurring payments and upcoming renewals with a centralized dashboard for billing details and subscription statuses.",
-    tech: ["React Native", "Expo", "Supabase", "Node.js"],
+    tech: ["React Native", "Expo", "Node.js"],
     github: "https://github.com/sv-sanjaiykumar/recurrly-react-native",
     app: null,
     accent: "#a78bfa",

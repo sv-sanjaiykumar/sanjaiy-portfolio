@@ -93,7 +93,7 @@ export default function Hero({ start }) {
 
       <div ref={contentRef} className="relative z-10 mx-auto w-full max-w-6xl px-5 pt-28 pb-20 md:px-8">
         <p className="hero-in font-mono text-xs uppercase tracking-[0.35em] text-dim opacity-0">
-          Mobile App Developer — {profile.location}
+          Software Developer — {profile.location}
         </p>
 
         <h1 className="hero-title mt-6 font-display font-semibold display-tight opacity-0" aria-label={profile.name}>
@@ -108,7 +108,7 @@ export default function Hero({ start }) {
         <div className="hero-in mt-8 flex items-baseline gap-3 text-lg text-dim opacity-0 md:text-2xl">
           <span className="shrink-0">I am a</span>
           <span className="block h-[1.6em] overflow-hidden">
-            <span ref={roleRef} className="block font-display font-medium text-mist">
+            <span className="block font-display font-medium text-mist">
               {profile.roles[0]}
             </span>
           </span>

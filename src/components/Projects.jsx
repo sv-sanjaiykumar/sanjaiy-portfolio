@@ -70,14 +70,16 @@ function ProjectCard({ project, index }) {
           ))}
         </div>
         <div className="mt-6 flex gap-6 border-t border-line pt-5 text-sm">
-          <a
-            href={project.github}
-            target="_blank"
-            rel="noreferrer"
-            className="text-mist transition-colors hover:text-flutter"
-          >
-            GitHub <span aria-hidden="true">↗</span>
-          </a>
+          {project.github && (
+            <a
+              href={project.github}
+              target="_blank"
+              rel="noreferrer"
+              className="text-mist transition-colors hover:text-flutter"
+            >
+              GitHub <span aria-hidden="true">↗</span>
+            </a>
+          )}
           {project.app && (
             <a
               href={project.app}
