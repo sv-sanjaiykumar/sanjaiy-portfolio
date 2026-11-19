@@ -27,7 +27,7 @@ export const skillGroups = [
   {
     label: "Languages",
     level: 88,
-    items: ["C++", "TypeScript", "JavaScript", "Python"],
+    items: ["C++", "TypeScript", "JavaScript", "Python" , "Java"],
   },
   {
     label: "Frameworks",
